@@ -1,6 +1,17 @@
-import { expect, test } from 'vitest'
+import { describe,expect, test } from 'vitest';
 import { formatCurrency } from './utils';
 
-test("formats currency correctly", () => {
-    expect(formatCurrency(999)).toBe("$9.99");
+
+describe("formatCurrency", () => {
+    test("should format currency", () => {
+        expect(formatCurrency(999)).toBe("$9.99");
+    });
+
+    test("should return string", () => {
+        expect(formatCurrency(999)).toBeTypeOf("string");
+    });
+
+    test("should format currency", () => {
+        expect(formatCurrency(999)).toHaveLength(5);
+    });
 })
