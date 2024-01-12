@@ -12,6 +12,7 @@ describe("formatCurrency", () => {
     });
 
     test("should format currency", () => {
+        // expect(formatCurrency(999).length == 5).toBeTruthy();
         expect(formatCurrency(999)).toHaveLength(5);
     });
 })
