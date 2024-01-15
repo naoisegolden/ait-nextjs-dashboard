@@ -6,7 +6,8 @@
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start",
-    "test": "vitest --ui",
+    "test": "vitest",
+    "test:ui": "vitest --ui --coverage.enabled=true",
     "coverage": "vitest run --coverage",
     "seed": "node -r dotenv/config ./scripts/seed.js"
   },
